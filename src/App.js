@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Pagination from './Pagination/Pagination';
+import Calendar from './calendar/calendar'
 import './App.css';
+import 'react-calendar/dist/Calendar.css';
+import Calendaremoji from './calendar/calendaremoji'
+import Calendar1 from './calendar/calendar1'
+import Mailing from './mailing/mailing'
+import Emaill from './emaill'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Pagination />
+      <Calendar />
+      <Calendaremoji />
+      <Calendar1 />
+      <Mailing />
+      <Emaill />
     </div>
   );
 }
